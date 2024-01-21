@@ -125,9 +125,19 @@ const RoomPage = () => {
             width="200px"
             url={myStream}
           />
+          {/* <div style={{ border: "2px solid red" }}>
+            <iframe
+              title="Hand Gesture Recognition"
+              width="640"
+              height="480"
+              src="http://127.0.0.1:5000/video_feed"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+          </div> */}
         </>
       )}
-      {remoteStream && (
+      {/* {remoteStream && (
         <>
           <h1>Remote Stream</h1>
           <ReactPlayer
@@ -138,7 +148,17 @@ const RoomPage = () => {
             url={remoteStream}
           />
         </>
-      )}
+      )} */}
+      <div style={{ border: "2px solid red" }}>
+        <iframe
+          title="Hand Gesture Recognition"
+          width="640"
+          height="480"
+          src="http://127.0.0.1:5000/video_feed"
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+      </div>
     </div>
   );
 };
